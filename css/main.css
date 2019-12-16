@@ -1,0 +1,242 @@
+/**************************************
+ * GENERAL
+**************************************/
+body {
+	font-family: 'Open Sans', sans-serif;	
+}
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+a {
+	/* Removing the underlines for the link */
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+#gallery img {
+	width: 400px;
+	height: 290px;
+}
+
+h3 {
+	margin: 0 0 5px 0;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/*************************************
+ * HEADING
+ ************************************/
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive , snas-serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 0.75em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+
+/*************************************
+ * NAVIGATION
+ ************************************/
+
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 10px;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+/*************************************
+ * FOOTER
+ ************************************/
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 50px;
+	color: #ccc;
+		clear: both;
+}
+
+footer img {
+	width: 50px;
+	height: 50px;
+}
+
+/*************************************
+ * PAGE PORTFOLIO
+ ************************************/
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+	color: #bdc3c7;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color: #bdc3c7;
+	text-transform: uppercase;
+	opacity: 0.9;
+}
+
+ /**************************************
+ * COLORS
+ **************************************/
+
+/* site body */
+body {
+	background-color: #fff;
+	color: #999;
+}
+
+/* green Header */
+header {
+	background: #6ab47b;
+	border-color: #599a68;
+}
+
+/* nav background in mobile devices */
+nav {
+	background-color: #599a68;
+}
+
+/* logo text */
+h1, h2 {
+	color: #fff;
+}
+
+/* Links */
+a:link {
+	color: white;
+}
+
+/* nav links */
+nav ul li a, nav a:visited{
+	color: #fff;
+}
+
+/* selected nav link */
+nav a:hover {
+	color: #32673f;
+}
+
+nav a:active {
+	position: relative;
+	top: 1px;
+}
+
+.social-logo:hover {
+	position: relative;
+	/*top: -20px;*/
+	opacity: 0.7;
+	animation: logoMotion .5s linear alternate infinite;
+}
+
+@keyframes logoMotion {
+	from { position: relative; top: 0;}
+	to   { position: relative; top: -20px;}
+}
+
+
+
+/*=================================================================================
+						             ABOUT PAGE
+==================================================================================*/
+.profile-photo {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto 30px;
+	-webkit-border-radius: 100%;
+	-o-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+}
+
+
+
+/*=================================================================================
+					             CONTACT PAGE
+==================================================================================*/
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info a:link,
+.contact-info a:visited {	
+	display: block;
+	background-repeat: no-repeat;
+	min-height: 25px;
+	margin: 0 0 10px;
+	padding:  0 0 0 30px;
+	background-size: 25px 25px;
+	color: #699A33;
+}
+
+.contact-info li.phone a {
+	background-image: url('../images/phone.png');
+}
+
+.contact-info li.mail a {	
+	background-image: url('../images/mail.png');	
+}
+
+.contact-info li.twitter a {
+	background-image: url('../images/twitter.png');
+}
+
